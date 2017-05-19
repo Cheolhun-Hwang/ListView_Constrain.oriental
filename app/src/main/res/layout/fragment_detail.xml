@@ -21,7 +21,6 @@
             android:maxWidth="450dp"
             android:scaleType="fitXY"
             android:src="@drawable/img01" />
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,7 +33,6 @@
                 android:layout_height="wrap_content"
                 android:text="TextView"
                 android:textSize="30dp" />
-
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -57,7 +55,6 @@
                     android:textSize="20dp" />
             </RelativeLayout>
         </LinearLayout>
-
         <Button
             android:id="@+id/backBtn"
             android:layout_width="150dp"
@@ -67,6 +64,5 @@
             android:background="#FFE5EEE5"
             android:text="돌아가기" />
     </LinearLayout>
-
 
 </FrameLayout>

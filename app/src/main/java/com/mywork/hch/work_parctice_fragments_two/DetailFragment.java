@@ -37,10 +37,11 @@ public class DetailFragment extends Fragment  {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
+        v= inflater.inflate(R.layout.fragment_detail, container, false);
+        backBtn = (Button) v.findViewById(R.id.backBtn);
+
         if(getActivity().getWindowManager().getDefaultDisplay().getRotation() == Surface.ROTATION_90){
-            v= inflater.inflate(R.layout.fragment_detail_land, container, false);
-        }else{
-            v= inflater.inflate(R.layout.fragment_detail, container, false);
+            backBtn.setVisibility(View.GONE);
         }
         manager = getFragmentManager();
 
@@ -68,7 +69,6 @@ public class DetailFragment extends Fragment  {
         //가로 시 버튼을 표시하지 않습니다. 세로시 버튼을 표시하고 이벤트를 설정합니다.
         if (getActivity().getWindowManager().getDefaultDisplay().getRotation() == Surface.ROTATION_90){
         }else{
-            backBtn = (Button) v.findViewById(R.id.backBtn);
 
             //Back 버튼 클릭시 리턴 프래그먼트
             backBtn.setOnClickListener(new View.OnClickListener() {
